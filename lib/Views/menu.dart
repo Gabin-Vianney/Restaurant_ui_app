@@ -80,17 +80,22 @@ class _MenuViewState extends State<MenuView> {
                               fontWeight: FontWeight.bold),
                         ),
                         subtitle: Text("Halal Lab Office"),
-                        leading: Container(
-                            height: 50,
-                            width: 50,
-                            padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                                color: AppColors.iconsBgColor,
-                                borderRadius: BorderRadius.circular(25)),
-                            child: Icon(
-                              Icons.arrow_back_ios_new_outlined,
-                              color: Colors.black,
-                            )),
+                        leading: InkWell(
+                          onTap: (){
+                            Navigator.pop(context) ;
+                          },
+                          child: Container(
+                              height: 50,
+                              width: 50,
+                              padding: EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                  color: AppColors.iconsBgColor,
+                                  borderRadius: BorderRadius.circular(25)),
+                              child: Icon(
+                                Icons.arrow_back_ios_new_outlined,
+                                color: Colors.black,
+                              )),
+                        ),
                       ),
                     ),
                     Container(

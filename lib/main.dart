@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resturent/Views/home_view.dart';
 import 'package:resturent/Views/menu.dart';
+import 'package:resturent/Views/restuerents.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "CustomFont",
         ),
-        home: HomeView());
+        home: RestuerentsView());
   }
 }
