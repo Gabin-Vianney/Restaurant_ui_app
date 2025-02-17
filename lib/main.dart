@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:resturent/Views/home_view.dart';
-import 'package:resturent/Views/menu.dart';
-import 'package:resturent/Views/restuerents.dart';
+
+import 'package:resturent/Views/restuerents_list.dart';
+
+import 'Routes/routes.dart';
+import 'Routes/routes_name.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +21,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "CustomFont",
         ),
-        home: RestuerentsView());
+        initialRoute: RoutesName.menuDetailScreen,
+        onGenerateRoute: Routes.generatedRoutes);
   }
 }

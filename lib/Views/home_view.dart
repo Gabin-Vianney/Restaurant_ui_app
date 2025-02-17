@@ -3,7 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:resturent/Utils/app_colors.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:resturent/Views/menu.dart';
+import 'package:resturent/Views/menu_list.dart';
+import 'package:resturent/Views/restuerents_list.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -33,7 +34,7 @@ class HomeViewState extends State<HomeView> {
     "assets/images/chips1.png",
   ];
 
- static List<String> imagesOfResturentes = [
+  static List<String> imagesOfResturentes = [
     "assets/images/1.jpg",
     "assets/images/9.jpg",
     "assets/images/8.jpg",
@@ -165,7 +166,7 @@ class HomeViewState extends State<HomeView> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MenuView(),
+                                builder: (context) => MenuList(),
                               ));
                         },
                         child: Row(
@@ -234,20 +235,29 @@ class HomeViewState extends State<HomeView> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MenuView(),
+                                builder: (context) => MenuList(),
                               ));
                         },
-                        child: Row(
-                          children: [
-                            Text("See All", style: TextStyle(fontSize: 18)),
-                            Padding(
-                              padding: const EdgeInsets.all(4),
-                              child: Icon(
-                                Icons.arrow_forward_ios_rounded,
-                                size: 18,
-                              ),
-                            )
-                          ],
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => RestuerentsList(),
+                                ));
+                          },
+                          child: Row(
+                            children: [
+                              Text("See All", style: TextStyle(fontSize: 18)),
+                              Padding(
+                                padding: const EdgeInsets.all(4),
+                                child: Icon(
+                                  Icons.arrow_forward_ios_rounded,
+                                  size: 18,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],

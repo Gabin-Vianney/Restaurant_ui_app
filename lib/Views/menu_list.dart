@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:resturent/Utils/app_colors.dart';
 
-class MenuView extends StatefulWidget {
-  const MenuView({super.key});
+class MenuList extends StatefulWidget {
+  const MenuList({super.key});
 
   @override
-  State<MenuView> createState() => _MenuViewState();
+  State<MenuList> createState() => _MenuListState();
 }
 
-class _MenuViewState extends State<MenuView> {
+class _MenuListState extends State<MenuList> {
   List<String> priceOfItems = [
     "Rs. 2000",
     "Rs. 3250",
