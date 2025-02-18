@@ -214,11 +214,10 @@ class MenuDetail extends StatelessWidget {
                           color: Colors.grey.shade200,
                           borderRadius: BorderRadius.all(Radius.circular(25))),
                       child: Text("\"12\"", style: TextStyle(fontSize: 18)),
-                    )
+                    ),
                   ],
                 ),
               ),
-
             ],
           ),
         ),
