@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "CustomFont",
         ),
-        initialRoute: RoutesName.menuDetailScreen,
+        initialRoute: RoutesName.resDetailScreen,
         onGenerateRoute: Routes.generatedRoutes);
   }
 }

@@ -218,6 +218,86 @@ class MenuDetail extends StatelessWidget {
                   ],
                 ),
               ),
+              Container(
+                margin: EdgeInsets.only(top: 20, bottom: 10),
+                padding:
+                    EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 5),
+                decoration: BoxDecoration(
+                  color: AppColors.iconsBgColor,
+                  borderRadius: BorderRadius.all(Radius.circular(30)),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Rs. 2000",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    Container(
+                      height: 60,
+                      width: 150,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.all(Radius.circular(30))),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.grey,
+                            radius: 15,
+                            child: Text(
+                              "-",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
+                          ),
+                          Text(
+                            "2",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          CircleAvatar(
+                            backgroundColor: Colors.grey,
+                            radius: 15,
+                            child: Text(
+                              "+",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 60,
+                width: double.infinity,
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 3),
+                padding: EdgeInsets.all(6),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: AppColors.themeColor),
+                child: Text(
+                  "Add to Cart",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
+                ),
+              )
             ],
           ),
         ),

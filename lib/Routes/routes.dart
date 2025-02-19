@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:resturent/Routes/routes_name.dart';
 import 'package:resturent/Views/menu_detail.dart';
 import 'package:resturent/Views/menu_list.dart';
+import 'package:resturent/Views/restuerents_detail.dart';
 import 'package:resturent/Views/restuerents_list.dart';
 
 import '../Views/home_view.dart';
@@ -11,8 +12,10 @@ class Routes {
     switch (setting.name) {
       case RoutesName.homeScreen:
         return _createRoute(const HomeView());
-      case RoutesName.resDetailScreen:
+      case RoutesName.resListScreen:
         return _createRoute(const RestuerentsList());
+      case RoutesName.resDetailScreen:
+        return _createRoute(const ResturentsDetail());
       case RoutesName.menuDetailScreen:
         return _createRoute(const MenuDetail());
       case RoutesName.menuListScreen:
