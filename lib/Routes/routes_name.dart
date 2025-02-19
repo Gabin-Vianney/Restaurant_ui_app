@@ -6,7 +6,7 @@ class RoutesName{
   static const String resDetailScreen = "restaurants_screen" ;
   static const String splashScreen = "splash_screen" ;
   static const String introScreen = "intro_screen" ;
-  static const String signinScreen = "signin_screen" ;
+  static const String loginScreen = "login_screen" ;
   static const String signUpScreen = "signUp_screen" ;
   static const String forgetScreen = "forget_password_screen" ;
   static const String mobileNumberScreen = "mobile_number_screen" ;

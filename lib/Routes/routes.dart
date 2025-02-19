@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resturent/Routes/routes_name.dart';
+import 'package:resturent/Views/AuthScreen/login_screen.dart';
 import 'package:resturent/Views/menu_detail.dart';
 import 'package:resturent/Views/menu_list.dart';
 import 'package:resturent/Views/restuerents_detail.dart';
@@ -20,6 +21,8 @@ class Routes {
         return _createRoute(const MenuDetail());
       case RoutesName.menuListScreen:
         return _createRoute(const MenuList());
+      case RoutesName.loginScreen:
+        return _createRoute(const LoginScreen());
 
       default:
         return _createRoute(
