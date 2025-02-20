@@ -249,7 +249,7 @@ class PaymentScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 120,
               ),
               InkWell(
                 onTap: () {},
