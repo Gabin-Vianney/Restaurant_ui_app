@@ -175,7 +175,7 @@ class PaymentScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: AppColors.iconsBgColor),
+                      color: Colors.grey.shade200),
                   child: Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -247,7 +247,33 @@ class PaymentScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 100,
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: 65, // Dynamic height
+                  width: double.infinity,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(7),
+                    color: AppColors.themeColor,
+                  ),
+                  child: Text(
+                    "CONFIRM & PAY",
+                    style: TextStyle(
+                      fontFamily: "Poppins",
+                      letterSpacing: 1,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 19,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
