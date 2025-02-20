@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:resturent/Routes/routes_name.dart';
+import 'package:resturent/Views/AuthScreen/forget_password_screen.dart';
 import 'package:resturent/Views/AuthScreen/login_screen.dart';
+import 'package:resturent/Views/AuthScreen/sign_up_screen.dart';
+import 'package:resturent/Views/AuthScreen/verification_screen.dart';
+import 'package:resturent/Views/cart_screen.dart';
 import 'package:resturent/Views/menu_detail.dart';
 import 'package:resturent/Views/menu_list.dart';
+import 'package:resturent/Views/payment_screen.dart';
 import 'package:resturent/Views/restuerents_detail.dart';
 import 'package:resturent/Views/restuerents_list.dart';
 
@@ -23,6 +28,16 @@ class Routes {
         return _createRoute(const MenuList());
       case RoutesName.loginScreen:
         return _createRoute(const LoginScreen());
+      case RoutesName.signUpScreen:
+        return _createRoute(const SignUpScreen());
+      case RoutesName.forgetScreen:
+        return _createRoute(const ForgetPasswordScreen());
+      case RoutesName.verificationCodeScreen:
+        return _createRoute(const VerificationCodeScreen());
+ case RoutesName.cartScreen:
+        return _createRoute(const CartScreen());
+case RoutesName.paymentScreen:
+        return _createRoute(const PaymentScreen());
 
       default:
         return _createRoute(

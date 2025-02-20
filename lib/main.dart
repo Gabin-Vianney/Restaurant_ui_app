@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:resturent/Views/home_view.dart';
-
-import 'package:resturent/Views/restuerents_list.dart';
-
 import 'Routes/routes.dart';
 import 'Routes/routes_name.dart';
 
@@ -21,7 +17,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "CustomFont",
         ),
-        initialRoute: RoutesName.loginScreen,
+        initialRoute: RoutesName.paymentScreen,
         onGenerateRoute: Routes.generatedRoutes);
   }
 }

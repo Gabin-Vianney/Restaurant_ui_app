@@ -9,8 +9,9 @@ class RoutesName{
   static const String loginScreen = "login_screen" ;
   static const String signUpScreen = "signUp_screen" ;
   static const String forgetScreen = "forget_password_screen" ;
-  static const String mobileNumberScreen = "mobile_number_screen" ;
-  static const String optVerificationScreen = "opt_verification_screen" ;
+  static const String cartScreen = "cart_screen" ;
+  static const String paymentScreen = "payment_screen" ;
+  static const String verificationCodeScreen = "verification_code_screen" ;
   static const String newPasswordScreen = "new_password_screen" ;
   static const String happyScreen = "happy_screen" ;
   static const String notificationScreen = "notification_screen" ;

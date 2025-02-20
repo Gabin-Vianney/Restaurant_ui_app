@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:resturent/Utils/app_colors.dart';
-
+import 'package:badges/badges.dart' as badges;
 class MenuList extends StatefulWidget {
   const MenuList({super.key});
 
@@ -111,18 +111,29 @@ class _MenuListState extends State<MenuList> {
                         size: 25,
                       ),
                     ),
-                    Container(
-                      height: 50,
-                      margin: EdgeInsets.only(left: 6),
-                      width: 50,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          color: AppColors.iconsBgColor,
-                          borderRadius: BorderRadius.circular(25)),
-                      child: FaIcon(
-                        Icons.filter_list_sharp,
-                        color: Colors.black,
-                        size: 25,
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        height: 50,
+                        margin: EdgeInsets.only(left: 6),
+                        width: 50,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(25)),
+                        child: badges.Badge(
+                          position:
+                          badges.BadgePosition.topEnd(top: -14, end: -10),
+                          badgeContent: Text(
+                            "2",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          child: FaIcon(
+                            FontAwesomeIcons.cartPlus,
+                            color: Colors.white,
+                            size: 25,
+                          ),
+                        ),
                       ),
                     )
                   ],
